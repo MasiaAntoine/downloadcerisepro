@@ -1,0 +1,35 @@
+RewriteEngine On
+
+# Redirection HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Classique Redirection
+RewriteRule ^/?$ index.php
+
+RewriteRule ^profil?$ profil.php
+RewriteRule ^parametres?$ settings.php
+RewriteRule ^factures?$ invoices.php
+RewriteRule ^facture-(.*)$ invoice.php?IdFacture=$1
+RewriteRule ^personelData?$ personalData.php
+RewriteRule ^deleteAccount?$ supprimerCompte.php
+RewriteRule ^cookie?$ cookie.php
+RewriteRule ^contact?$ contact.php
+RewriteRule ^ban?$ ban.php
+RewriteRule ^inscriptionValid?$ registerOK.php
+
+RewriteRule ^boutique?$ boutique.php
+RewriteRule ^article-(.*)$ boutiqueAchat.php?IdArticle=$1
+
+RewriteRule ^connexion?$ login.php
+RewriteRule ^inscription?$ register.php
+
+RewriteRule ^fiches-(.*)-p(.*)-(.*)-(.*)$ fiches.php?filiere=$1&pole=$2&classement=$3&page=$4
+RewriteRule ^fiche-(.*)$ fiche.php?IdFiche=$1
+RewriteRule ^debloquer-(.*)$ ficheUnlock.php?IdFiche=$1
+RewriteRule ^envoyer?$ ficheSend.php
+
+# Admin Redirection
+RewriteRule ^admin/attente?$ admin/ficheAttente.php
+RewriteRule ^admin/?$ admin/index.php
+RewriteRule ^admin/pages/boutique/edit-(.*) admin/pages/boutique/edit.php?IdArticle=$1
