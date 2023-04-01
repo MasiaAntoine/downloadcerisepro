@@ -1,0 +1,3138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>API Documentation</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+    <link href="css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prism.css" rel="stylesheet" media="all"/>
+    <link href="css/template.css" rel="stylesheet" media="all"/>
+    
+    <!--[if lt IE 9]>
+    <script src="js/html5.js"></script>
+    <![endif]-->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/ui/1.10.4/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.smooth-scroll.js"></script>
+    <script src="js/prism.min.js"></script>
+    <!-- TODO: Add http://jscrollpane.kelvinluck.com/ to style the scrollbars for browsers not using webkit-->
+    
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png"/>
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <i class="icon-ellipsis-vertical"></i>
+            </a>
+            <a class="brand" href="index.html">API Documentation</a>
+
+            <div class="nav-collapse">
+                <ul class="nav pull-right">
+                                        <li class="dropdown" id="charts-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Charts <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="graphs/class.html">
+                                    <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="reports-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Reports <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="reports/errors.html">
+                                                                                                                                                                                                                                                                    <i class="icon-list-alt"></i>&#160;Errors <span class="label label-info pull-right">26</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="reports/markers.html">
+                                                                                                                                                                                                                                                                    <i class="icon-list-alt"></i>&#160;Markers <span class="label label-info pull-right">0</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="reports/deprecated.html">
+                                                                                                            <i class="icon-list-alt"></i>&#160;Deprecated <span class="label label-info pull-right">0</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--<div class="go_to_top">-->
+    <!--<a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>-->
+    <!--</div>-->
+</div>
+
+<div id="___" class="container-fluid">
+        <section class="row-fluid">
+        <div class="span2 sidebar">
+                                <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                <a href="namespaces/default.html" style="margin-left: 30px; padding-left: 0">\</a>
+            </div>
+            <div id="namespace-515946312" class="accordion-body collapse in">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </section>
+    <section class="row-fluid">
+        <div class="span10 offset2">
+            <div class="row-fluid">
+                <div class="span8 content namespace">
+                    <nav>
+                                                
+                                            </nav>
+                    <h1><small></small>\</h1>
+
+                    
+                    
+                    
+                                    </div>
+
+                <aside class="span4 detailsbar">
+                    <dl>
+                        <dt>Namespace hierarchy</dt>
+                        <dd class="hierarchy">
+                                                                                                                                                <div class="namespace-wrapper">\</div>
+                        </dd>
+                    </dl>
+                </aside>
+            </div>
+
+            
+                        <div class="row-fluid">
+                <section class="span8 content namespace">
+                    <h2>Functions</h2>
+                </section>
+                <aside class="span4 detailsbar"></aside>
+            </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_addArticle" name="method_addArticle" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">addArticle()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">addArticle(string  <span class="argument">$Titre</span>, float  <span class="argument">$Prix</span>, integer  <span class="argument">$Cerise</span>, integer  <span class="argument">$CeriseBonus</span>, boolean  <span class="argument">$Available</span>, string  <span class="argument">$LinkImg</span>) : void</pre>
+                <p><em>Ajoute un article dans la boutique depuis le pannel admin.</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$Titre </td>
+                                <td><p>(Ex: &quot;Caisse de Cerise&quot;)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>float</td>
+                                <td>$Prix </td>
+                                <td><p>(Ex: 13.33)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$Cerise </td>
+                                <td><p>(Ex: 1000)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$CeriseBonus </td>
+                                <td><p>(Ex: 250)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>boolean</td>
+                                <td>$Available </td>
+                                <td><p>(Ex: true)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$LinkImg </td>
+                                <td><p>(Ex: &quot;cerise-caisse.png&quot;)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_addCerise" name="method_addCerise" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">addCerise()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">addCerise(integer  <span class="argument">$nombreCerise</span>, integer  <span class="argument">$idUser</span>) : void</pre>
+                <p><em>Ajoute des cerises sur le comptes d&#039;un utilisateur</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$nombreCerise </td>
+                                <td><p>(Ex: 100)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$idUser </td>
+                                <td><p>(Ex: 11)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_addFiche" name="method_addFiche" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">addFiche()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">addFiche(string  <span class="argument">$Filière</span>, string  <span class="argument">$Correspondance</span>, string  <span class="argument">$Titre</span>, string  <span class="argument">$Text1</span>, string  <span class="argument">$Text2</span>, string  <span class="argument">$Text3</span>, string  <span class="argument">$Text4</span>, string  <span class="argument">$Text5</span>, integer  <span class="argument">$IdUser</span>) : void</pre>
+                <p><em>Envoyer une fiche depuis un formulaire, permet d&#039;alimenté le site, et de récompensé les utilisateurs</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$Filière </td>
+                                <td><p>(Ex: &quot;bac&quot;)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$Correspondance </td>
+                                <td><p>(Ex: &quot;1.1.1&quot;)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$Titre </td>
+                                <td><p>(Ex: &quot;illo nulla qui&quot;)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$Text1 </td>
+                                <td><p>(Ex: &quot;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate aliquam iure assumenda beatae maxime ab inventore explicabo illo nulla qui? Maiores dicta consequatur tempore hic error similique voluptatibus nulla magni.&quot;)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$Text2 </td>
+                                <td><p>(Ex: &quot;consectetur adipisicing elit. Cupiditate aliquam iure assumenda beatae maxime ab inventore explicabo illo nulla qui? Maiores dicta consequatur tempore hic error similique voluptatibus nulla magni.&quot;)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$Text3 </td>
+                                <td><p>(Ex: &quot;Cupiditate aliquam iure assumenda beatae maxime ab inventore explicabo illo nulla qui? Maiores dicta consequatur tempore hic error similique voluptatibus nulla magni.&quot;)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$Text4 </td>
+                                <td><p>(Ex: &quot;assumenda beatae maxime ab inventore explicabo illo nulla qui? Maiores dicta consequatur tempore hic error similique voluptatibus nulla magni.&quot;)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$Text5 </td>
+                                <td><p>(Ex: &quot;sit amet consectetur adipisicing elit. Cupiditate aliquam iure assumenda beatae maxime ab inventore explicabo illo nulla qui? Maiores dicta consequatur tempore hic error similique voluptatibus nulla magni.&quot;)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$IdUser </td>
+                                <td><p>Identifiant de la session (Ex: 11)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_addFicheForUser" name="method_addFicheForUser" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">addFicheForUser()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">addFicheForUser(integer  <span class="argument">$IdUser</span>, integer  <span class="argument">$IdFiche</span>, integer  <span class="argument">$price</span>) : void</pre>
+                <p><em>Donnée l&#039;accès à une fiche pour l&#039;utilisateur, si il a suffisament de cerise pour la débloquer.</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$IdUser </td>
+                                <td><p>(Ex: 11)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$IdFiche </td>
+                                <td><p>(Ex: 2)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$price </td>
+                                <td><p>(Ex: 300)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_addLikeForFiche" name="method_addLikeForFiche" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">addLikeForFiche()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">addLikeForFiche(integer  <span class="argument">$IdUser</span>, integer  <span class="argument">$IdFiche</span>) : void</pre>
+                <p><em>Ajoute la mention j&#039;aime à une fiche</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$IdUser </td>
+                                <td><p>(Ex: 11)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$IdFiche </td>
+                                <td><p>(Ex: 67)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_addToken" name="method_addToken" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">addToken()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">addToken(string  <span class="argument">$email</span>, integer  <span class="argument">$date</span>, string  <span class="argument">$idToken</span>) : void</pre>
+                <p><em>Créer un jeton de validation envoyé par mail pour confirmer le compte.</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$email </td>
+                                <td><p>(Ex: &quot;test@test.fr&quot;)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$date </td>
+                                <td><p>(Ex: 1111002983)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$idToken </td>
+                                <td><p>(Ex: &quot;p2z03iLp6ff7z2&quot;)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_addUser" name="method_addUser" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">addUser()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">addUser(string  <span class="argument">$nom</span>, string  <span class="argument">$prénom</span>, string  <span class="argument">$email</span>, string  <span class="argument">$password</span>, string  <span class="argument">$avatar</span>) : void</pre>
+                <p><em>Ajoute un nouveau utilisateur avec les données envoyé depuis le formulaire</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$nom </td>
+                                <td><p>(Ex: &quot;Dupon&quot;)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$prénom </td>
+                                <td><p>(Ex: &quot;Pierre&quot;)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$email </td>
+                                <td><p>(Ex: &quot;test@test.fr&quot;)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$password </td>
+                                <td><p>(Ex: &quot;SHAlfpz3iLp6@dffz2&quot;)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$avatar </td>
+                                <td><p>(Ex: &quot;1292837647291083&quot;)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_addVente" name="method_addVente" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">addVente()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">addVente(string  <span class="argument">$IdTransaction</span>, string  <span class="argument">$IdPaypalPayer</span>, integer  <span class="argument">$IdUser</span>, string  <span class="argument">$Nom</span>, string  <span class="argument">$Prenom</span>, integer  <span class="argument">$IdArticle</span>, string  <span class="argument">$Status</span>, float  <span class="argument">$Prix</span>, string  <span class="argument">$Devise</span>, string  <span class="argument">$Pays</span>, integer  <span class="argument">$Cerise</span>, string  <span class="argument">$NumeroFacture</span>, float  <span class="argument">$TauxTVA</span>, string  <span class="argument">$Adresse</span>) : void</pre>
+                <p><em>Ajoute une vente, cette fonction permet de fabriquer les factures client.</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$IdTransaction </td>
+                                <td><p>(Ex: &quot;229842Q7918ZF53&quot;)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$IdPaypalPayer </td>
+                                <td><p>(Ex: &quot;02093821&quot;)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$IdUser </td>
+                                <td><p>(Ex: 11)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$Nom </td>
+                                <td><p>(Ex: &quot;Dupon&quot;)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$Prenom </td>
+                                <td><p>(Ex: &quot;Pierre&quot;)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$IdArticle </td>
+                                <td><p>(Ex: 2)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$Status </td>
+                                <td><p>(Ex: &quot;valid&quot;)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>float</td>
+                                <td>$Prix </td>
+                                <td><p>(Ex: 23.5)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$Devise </td>
+                                <td><p>(Ex: &quot;EUR&quot;)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$Pays </td>
+                                <td><p>(Ex: &quot;FR&quot;)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$Cerise </td>
+                                <td><p>(Ex: 200)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$NumeroFacture </td>
+                                <td><p>(Ex: &quot;DCP292873829827492&quot;)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>float</td>
+                                <td>$TauxTVA </td>
+                                <td><p>(Ex: 5.5)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$Adresse </td>
+                                <td><p>(Ex: &quot;7 rue des fours, 11000 Carcassonne&quot;)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_checkPassword" name="method_checkPassword" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">checkPassword()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">checkPassword(string  <span class="argument">$email</span>) : void</pre>
+                <p><em>Récupère le mot de passe en fonction de l&#039;adresse mail envoyé.</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$email </td>
+                                <td><p>(Ex: &quot;test@test.fr&quot;)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_connexion_db" name="method_connexion_db" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">connexion_db()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">connexion_db() </pre>
+                <p><em></em></p>
+                
+
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/essentialFunction.html"><div class="path-wrapper">essentialFunction.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_countSpecialChar" name="method_countSpecialChar" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">countSpecialChar()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">countSpecialChar(  <span class="argument">$chain</span>) </pre>
+                <p><em></em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td></td>
+                                <td>$chain </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/essentialFunction.html"><div class="path-wrapper">essentialFunction.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_cutPhrase" name="method_cutPhrase" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">cutPhrase()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">cutPhrase(  <span class="argument">$string</span>,   <span class="argument">$limit = 5</span>,   <span class="argument">$fin = &#039; ...&#039;</span>) </pre>
+                <p><em></em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td></td>
+                                <td>$string </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td></td>
+                                <td>$limit </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td></td>
+                                <td>$fin </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/essentialFunction.html"><div class="path-wrapper">essentialFunction.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_dataUser" name="method_dataUser" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">dataUser()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">dataUser(integer  <span class="argument">$id</span>) : array</pre>
+                <p><em>Selectionne toute les données d&#039;un utilisateur avec son identifiant de session.</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$id </td>
+                                <td><p>identifiant de session (Ex: 34)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_date_outil" name="method_date_outil" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">date_outil()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">date_outil(  <span class="argument">$date</span>,   <span class="argument">$nombre_jour</span>) </pre>
+                <p><em></em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td></td>
+                                <td>$date </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td></td>
+                                <td>$nombre_jour </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/essentialFunction.html"><div class="path-wrapper">essentialFunction.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_deleteAccount" name="method_deleteAccount" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">deleteAccount()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">deleteAccount(integer  <span class="argument">$IdUser</span>) : void</pre>
+                <p><em>Supprime le compte de l&#039;utilisateur, avec les fiches débloqué et les mentions j&#039;aime.</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$IdUser </td>
+                                <td><p>(Ex: 11)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_deleteFiche" name="method_deleteFiche" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">deleteFiche()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">deleteFiche(integer  <span class="argument">$id</span>) : void</pre>
+                <p><em>Supprime une fiche en fonction de son identifiant</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$id </td>
+                                <td><p>identifiant de la fiche (Ex: 12)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_editArticle" name="method_editArticle" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">editArticle()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">editArticle(string  <span class="argument">$Titre</span>, float  <span class="argument">$Prix</span>, integer  <span class="argument">$Cerise</span>, integer  <span class="argument">$CeriseBonus</span>, boolean  <span class="argument">$Available</span>,   <span class="argument">$IdProduit</span>) : void</pre>
+                <p><em>Modifie un article dans la boutique depuis le pannel admin</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$Titre </td>
+                                <td><p>(Ex: &quot;Caisse de Cerise&quot;)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>float</td>
+                                <td>$Prix </td>
+                                <td><p>(Ex: 13.33)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$Cerise </td>
+                                <td><p>(Ex: 1000)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$CeriseBonus </td>
+                                <td><p>(Ex: 250)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>boolean</td>
+                                <td>$Available </td>
+                                <td><p>(Ex: true)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td></td>
+                                <td>$IdProduit </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_emailDoublon" name="method_emailDoublon" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">emailDoublon()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">emailDoublon(string  <span class="argument">$email</span>) : array</pre>
+                <p><em>Vérifier si il n&#039;y a pas d&#039;adresse mail doublon</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$email </td>
+                                <td><p>(Ex: &quot;test@test.fr&quot;)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getIp" name="method_getIp" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">getIp()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">getIp() </pre>
+                <p><em></em></p>
+                
+
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/essentialFunction.html"><div class="path-wrapper">essentialFunction.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getUrl" name="method_getUrl" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">getUrl()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">getUrl(  <span class="argument">$chemin = true</span>) </pre>
+                <p><em></em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td></td>
+                                <td>$chemin </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/essentialFunction.html"><div class="path-wrapper">essentialFunction.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_isAdmin" name="method_isAdmin" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">isAdmin()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">isAdmin() : void</pre>
+                <p><em>Verifier si l&#039;utilisateur est admin</em></p>
+                
+
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_isBan" name="method_isBan" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">isBan()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">isBan() : void</pre>
+                <p><em>Verifier si l&#039;utilisateur est ban de la plateform</em></p>
+                
+
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_isConnect" name="method_isConnect" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">isConnect()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">isConnect() </pre>
+                <p><em></em></p>
+                
+
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/essentialFunction.html"><div class="path-wrapper">essentialFunction.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_likeFiche" name="method_likeFiche" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">likeFiche()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">likeFiche(integer  <span class="argument">$IdUser</span>) : array</pre>
+                <p><em>Récupère tout les fiches avec la mention j&#039;aime donnée par l&#039;utilisateur pour la partie donnée personnelle.</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$IdUser </td>
+                                <td><p>(Ex: 11)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_likeNumberFiche" name="method_likeNumberFiche" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">likeNumberFiche()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">likeNumberFiche(integer  <span class="argument">$IdFiche</span>) : integer</pre>
+                <p><em>Récupère le nombre total de mention j&#039;aime de la fiche</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$IdFiche </td>
+                                <td><p>(Ex: 45)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    integer
+                                            &mdash; <p>443</p>
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_MyDate" name="method_MyDate" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">MyDate()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">MyDate(  <span class="argument">$date</span>) </pre>
+                <p><em></em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td></td>
+                                <td>$date </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/essentialFunction.html"><div class="path-wrapper">essentialFunction.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_recupAllArticles" name="method_recupAllArticles" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">recupAllArticles()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">recupAllArticles() : array</pre>
+                <p><em>Récupérer tout les articles de la boutique publique. (Certain article peuvent être masqué depuis l&#039;espace Admin)</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_recupAllArticlesForArmin" name="method_recupAllArticlesForArmin" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">recupAllArticlesForArmin()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">recupAllArticlesForArmin() : array</pre>
+                <p><em>Récupérer tout les articles de la boutique pour le menu admin</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_recupAllFactures" name="method_recupAllFactures" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">recupAllFactures()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">recupAllFactures() : array</pre>
+                <p><em>Récupérer toute les factures (pour les admins)</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_recupAllFacturesUser" name="method_recupAllFacturesUser" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">recupAllFacturesUser()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">recupAllFacturesUser(integer  <span class="argument">$IdUser</span>) : array</pre>
+                <p><em>Récupérer toute les factures d&#039;un utilisateur</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$IdUser </td>
+                                <td><p>(Ex: 11)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_recupAllFichesOfUser" name="method_recupAllFichesOfUser" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">recupAllFichesOfUser()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">recupAllFichesOfUser(integer  <span class="argument">$IdUser</span>, boolean  <span class="argument">$public</span>) : void</pre>
+                <p><em>Récupère tout les fiches valider ou non de l&#039;utilisateur</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$IdUser </td>
+                                <td><p>(Ex: 11)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>boolean</td>
+                                <td>$public </td>
+                                <td><p>(Ex: true)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_recupAllFichesUnlockOfUser" name="method_recupAllFichesUnlockOfUser" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">recupAllFichesUnlockOfUser()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">recupAllFichesUnlockOfUser(integer  <span class="argument">$IdUser</span>) : array</pre>
+                <p><em>Récupère toute les fiches débloquée par l&#039;utilsateur</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$IdUser </td>
+                                <td><p>(Ex: 11)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_recupAllUserForAdmin" name="method_recupAllUserForAdmin" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">recupAllUserForAdmin()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">recupAllUserForAdmin() : array</pre>
+                <p><em>Récupère tout les utilisateurs du site avec leur dépenses totale en euro.</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_recupDataArticles" name="method_recupDataArticles" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">recupDataArticles()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">recupDataArticles(integer  <span class="argument">$IdProduit</span>) : array</pre>
+                <p><em>Récupérer les données d&#039;un article si il est visible (cela est pour la boutique client)</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$IdProduit </td>
+                                <td><p>(Ex: 4)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_recupDataArticlesAdmin" name="method_recupDataArticlesAdmin" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">recupDataArticlesAdmin()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">recupDataArticlesAdmin(integer  <span class="argument">$IdProduit</span>) : array</pre>
+                <p><em>Récupérer les données d&#039;un article si il est visible ou non (cela est pour la vu admin)</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$IdProduit </td>
+                                <td><p>(Ex: 4)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_recupFacture" name="method_recupFacture" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">recupFacture()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">recupFacture(string  <span class="argument">$NumeroFacture</span>) : array</pre>
+                <p><em>Récupérer les données de la facture avec son numéro.</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$NumeroFacture </td>
+                                <td><p>(Ex: &quot;DCP299278329042&quot;)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_recupId" name="method_recupId" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">recupId()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">recupId(string  <span class="argument">$email</span>) : array</pre>
+                <p><em>Récupérer l&#039;identifiant associé à l&#039;adresse email</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$email </td>
+                                <td><p>(Ex: &quot;test@test.fr&quot;)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_recupLastIdFiche" name="method_recupLastIdFiche" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">recupLastIdFiche()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">recupLastIdFiche() : integer</pre>
+                <p><em>Récupère le dernière idéntifiant insérer en base de donnée de la table fiche</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    integer
+                                            &mdash; <p>34</p>
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_recupPageView" name="method_recupPageView" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">recupPageView()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">recupPageView(integer  <span class="argument">$IdUser</span>) : array</pre>
+                <p><em>Récupère tout les pages visités de l&#039;utilisateur pour la partie donnée personnelle.</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$IdUser </td>
+                                <td><p>(Ex: 11)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_recupRecetteMois" name="method_recupRecetteMois" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">recupRecetteMois()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">recupRecetteMois(integer  <span class="argument">$mois</span>, integer  <span class="argument">$annee</span>) : float</pre>
+                <p><em>Récupère les recettes d&#039;un mois choisi</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$mois </td>
+                                <td><p>(Ex: 12)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$annee </td>
+                                <td><p>(Ex: 2022)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    float
+                                            &mdash; <p>234.45</p>
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_recupToken" name="method_recupToken" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">recupToken()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">recupToken(mixed  <span class="argument">$id</span>) : array</pre>
+                <p><em>Récupère les informations du token.</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>mixed</td>
+                                <td>$id </td>
+                                <td><p>id du token (Ex: &quot;p2z03iLp6ff7z2&quot;)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_recupVenteMois" name="method_recupVenteMois" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">recupVenteMois()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">recupVenteMois(integer  <span class="argument">$mois</span>, integer  <span class="argument">$annee</span>) : integer</pre>
+                <p><em>Récupère le nomnbre de vente d&#039;un mois choisi</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$mois </td>
+                                <td><p>(Ex: 12)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$annee </td>
+                                <td><p>(Ex: 2022)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    integer
+                                            &mdash; <p>2</p>
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_recupViewPage" name="method_recupViewPage" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">recupViewPage()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">recupViewPage(integer  <span class="argument">$mois</span>, integer  <span class="argument">$annee</span>) : integer</pre>
+                <p><em>Récupérer le nombre de visite du mois</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$mois </td>
+                                <td><p>(Ex: 12)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$annee </td>
+                                <td><p>(Ex: 2022)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    integer
+                                            &mdash; <p>234</p>
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_redirectUrl" name="method_redirectUrl" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">redirectUrl()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">redirectUrl(  <span class="argument">$url</span>) </pre>
+                <p><em></em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td></td>
+                                <td>$url </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/essentialFunction.html"><div class="path-wrapper">essentialFunction.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_selectAllFiche" name="method_selectAllFiche" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">selectAllFiche()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">selectAllFiche(boolean  <span class="argument">$public</span>, string  <span class="argument">$filiere = NULL</span>, integer  <span class="argument">$pole = NULL</span>) : integer</pre>
+                <p><em>compte toute les fiches publique ou en attente en fonction de la filière et du pole</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>boolean</td>
+                                <td>$public </td>
+                                <td><p>publique (Ex: true)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$filiere </td>
+                                <td><p>filière (Ex: &quot;bac&quot;)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$pole </td>
+                                <td><p>pole (Ex: 1)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    integer
+                                            &mdash; <p>43</p>
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_selectAllFiches" name="method_selectAllFiches" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">selectAllFiches()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">selectAllFiches(string  <span class="argument">$filiere</span>, integer  <span class="argument">$pole</span>, string  <span class="argument">$classement</span>, integer  <span class="argument">$fichesLimiteParPage</span>, integer  <span class="argument">$ficheDeDepart</span>, boolean  <span class="argument">$IsCount = false</span>) : array</pre>
+                <p><em>Selectionne tout les fiche avec un filtrage, ou si $IsCount est sur true compte le nombre de fiche avec les filtres.</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$filiere </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$pole </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$classement </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$fichesLimiteParPage </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$ficheDeDepart </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>boolean</td>
+                                <td>$IsCount </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_selectFicheOfId" name="method_selectFicheOfId" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">selectFicheOfId()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">selectFicheOfId(integer  <span class="argument">$IdFiche</span>) : array</pre>
+                <p><em>Selectionne les données d&#039;une fiche en fonction d&#039;un identifiant.</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$IdFiche </td>
+                                <td><p>identifiant de la fiche (Ex: 12)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_selectLastFicheSend" name="method_selectLastFicheSend" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">selectLastFicheSend()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">selectLastFicheSend() : array</pre>
+                <p><em>Permet de selectionner la plus veille fiche non publique</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_unlockedFiche" name="method_unlockedFiche" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">unlockedFiche()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">unlockedFiche(integer  <span class="argument">$IdUser</span>) : array</pre>
+                <p><em>Récupère tout les fiches débloquées de l&#039;utilisateur pour la partie donnée personnelle.</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$IdUser </td>
+                                <td><p>(Ex: 11)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_unlockedNumberFiche" name="method_unlockedNumberFiche" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">unlockedNumberFiche()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">unlockedNumberFiche(integer  <span class="argument">$IdFiche</span>) : integer</pre>
+                <p><em>Récupère le nombre de fois que la fiche à été débloqué</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$IdFiche </td>
+                                <td><p>(Ex: 11)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    integer
+                                            &mdash; <p>7</p>
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_updateExpireToken" name="method_updateExpireToken" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">updateExpireToken()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">updateExpireToken(integer  <span class="argument">$date</span>, string  <span class="argument">$id</span>, string  <span class="argument">$newIdT</span>) : void</pre>
+                <p><em>Change le token et la date si expiré.</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$date </td>
+                                <td><p>(Ex: 1111002983)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$id </td>
+                                <td><p>identifiant du token (Ex: &quot;p2z03iLp6ff7z2&quot;)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$newIdT </td>
+                                <td><p>identifiant du nouveau token (Ex: &quot;md7pc5lsoz2uf&quot;)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_updateFiche" name="method_updateFiche" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">updateFiche()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">updateFiche(integer  <span class="argument">$id</span>, integer  <span class="argument">$quality</span>) : void</pre>
+                <p><em>Passe une fiche en format publique avec la qualité choisi.</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$id </td>
+                                <td><p>identifiant de la fiche (Ex: 12)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$quality </td>
+                                <td><p>qualité de la fiche (Ex: 0,1 ou 2)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_validAccount" name="method_validAccount" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">validAccount()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">validAccount(  <span class="argument">$IdUser</span>) : void</pre>
+                <p><em>valide le compte de l&#039;utilisateur depuis le pannel admin.</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td></td>
+                                <td>$IdUser </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_validAccountToken" name="method_validAccountToken" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">validAccountToken()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">validAccountToken(string  <span class="argument">$email</span>) : void</pre>
+                <p><em>Confirme le compte si le token est validé</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$email </td>
+                                <td><p>(Ex: &quot;test@test.fr&quot;)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_verifFicheUnlocked" name="method_verifFicheUnlocked" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">verifFicheUnlocked()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">verifFicheUnlocked(integer  <span class="argument">$idUser</span>, integer  <span class="argument">$idFiche</span>) : array</pre>
+                <p><em>Vérifie si la fiche est débloquer pour l&#039;utilisateur</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$idUser </td>
+                                <td><p>(Ex: 11)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$idFiche </td>
+                                <td><p>(Ex : 3)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_verifInt" name="method_verifInt" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">verifInt()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">verifInt(  <span class="argument">$chain</span>) </pre>
+                <p><em></em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td></td>
+                                <td>$chain </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/essentialFunction.html"><div class="path-wrapper">essentialFunction.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_verifLikeFiche" name="method_verifLikeFiche" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">verifLikeFiche()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">verifLikeFiche(mixed  <span class="argument">$idUser</span>, mixed  <span class="argument">$idFiche</span>) : array</pre>
+                <p><em>Vérifie si la fiche est débloquer pour l&#039;utilisateur</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>mixed</td>
+                                <td>$idUser </td>
+                                <td><p>(Ex: 11)</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>mixed</td>
+                                <td>$idFiche </td>
+                                <td><p>(Ex: 45)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_verifValidUser" name="method_verifValidUser" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">verifValidUser()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">verifValidUser(string  <span class="argument">$email</span>) : array</pre>
+                <p><em>Vérifier si le compte de l&#039;utilisateur a été validé par mail.</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$email </td>
+                                <td><p>(Ex: &quot;test@test.fr&quot;)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_viewNumberFiche" name="method_viewNumberFiche" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">viewNumberFiche()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">viewNumberFiche(integer  <span class="argument">$IdFiche</span>) : integer</pre>
+                <p><em>Récupère le nombre de fois que la fiche à été vu</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$IdFiche </td>
+                                <td><p>(Ex: 11)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    integer
+                                            &mdash; <p>23</p>
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_viewPage" name="method_viewPage" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">viewPage()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">viewPage(string  <span class="argument">$NamePage</span>) : void</pre>
+                <p><em>Ajoute un vu sur la page pour faire des statistiques. cette fonction évite les doublons.</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$NamePage </td>
+                                <td><p>Nom de la page (&quot;accueil&quot;)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_writeCorrespondance" name="method_writeCorrespondance" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">writeCorrespondance()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">writeCorrespondance(string  <span class="argument">$arg</span>) : string</pre>
+                <p><em>Permet de convertir le code correspondance en correspondance de toute lettre.</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$arg </td>
+                                <td><p>correspondance (Ex: &quot;1.1.1&quot;)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    string
+                                            &mdash; <p>&quot;1.1.1 Tenue des dossiers fournisseurs et sous-traitants&quot;</p>
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_writeQuality" name="method_writeQuality" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">writeQuality()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">writeQuality(integer  <span class="argument">$quality</span>) : string</pre>
+                <p><em>Permet de convertir le chiffre de la qualité en toute lettre.</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$quality </td>
+                                <td><p>qualité (Ex: 0)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    string
+                                            &mdash; <p>&quot;classique&quot;</p>
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="files/functions.html"><div class="path-wrapper">functions.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Default</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                            
+        </div>
+    </section>
+
+    <footer class="row-fluid">
+        <section class="span10 offset2">
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    <section class="row-fluid footer-sections">
+                        <section class="span4">
+                                                        <h1><i class="icon-code"></i></h1>
+                            <div>
+                                <ul>
+                                                                    </ul>
+                            </div>
+                        </section>
+                        <section class="span4">
+                                                        <h1><i class="icon-bar-chart"></i></h1>
+                            <div>
+                                <ul>
+                                    <li><a href="graphs/class.html">Class Hierarchy Diagram</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="span4">
+                                                        <h1><i class="icon-pushpin"></i></h1>
+                            <div>
+                                <ul>
+                                    <li><a href="reports/errors.html">Errors</a></li>
+                                    <li><a href="reports/markers.html">Markers</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    <hr />
+                    Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
+                    on April 1st, 2023 at 16:20.
+                </section>
+            </section>
+        </section>
+    </footer>
+</div>
+
+</body>
+</html>
