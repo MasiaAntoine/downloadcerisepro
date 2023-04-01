@@ -60,10 +60,10 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
         
         <!-- Faux Paypal pour faire des tests avec l'API. -->
-        <!-- <script src="https://www.paypal.com/sdk/js?client-id=AZdSSdqKHQU6acjcamT9569TUZIkE9Xb1FJ5P8orKqsqC2okW_IZACJBmx7Pvn1pNoPlRaDdeFdaq4aA&currency=EUR&buyer-country=FR"></script> -->
+        <script src="https://www.paypal.com/sdk/js?client-id=AZdSSdqKHQU6acjcamT9569TUZIkE9Xb1FJ5P8orKqsqC2okW_IZACJBmx7Pvn1pNoPlRaDdeFdaq4aA&currency=EUR&buyer-country=FR"></script>
         
         <!-- Vrai Paypal pour vraiment recevoir les paiements. -->
-        <script src="https://www.paypal.com/sdk/js?client-id=AXZzkt22VhPvkWJGLzzjaSYg5Ew27smu7dUjT9tPV0cPqCEiyN16inNVw-6wHjtXa1qb5_mHk91qaANT&currency=EUR"></script>
+        <!-- <script src="https://www.paypal.com/sdk/js?client-id=AXZzkt22VhPvkWJGLzzjaSYg5Ew27smu7dUjT9tPV0cPqCEiyN16inNVw-6wHjtXa1qb5_mHk91qaANT&currency=EUR"></script> -->
 	</head>
 	<body class="is-preload">
 		<!-- Page Wrapper -->

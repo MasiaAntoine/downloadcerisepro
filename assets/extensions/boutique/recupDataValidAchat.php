@@ -1,15 +1,9 @@
 <?php
     session_start();
-    include_once $_SERVER['DOCUMENT_ROOT'].'/assets/config/functions.inc.php';
-    
-    $outil = new Outils;
-   
-    //Si l'utilisateur n'est pas connecter envoyer à la page de connexion
-    $isConnected = $outil->isConnected();
+    include_once $_SERVER['DOCUMENT_ROOT'].'/assets/extensions/functions.php';
 
-    if(!$isConnected) {
-        $outil->redirectUrl("/");
-    }
+    //Si l'utilisateur n'est pas connecter envoyer à la page de connexion
+    isConnect();
 
     //Récupère les données Paypal
     $json = json_decode($_POST['form'], true);
@@ -58,7 +52,7 @@
     addCerise($Cerise,$IdUser);
 
     //ajoute la vente en bdd
-    addVente($IdTransaction, $IdPaypalPayer, $IdUser, $Nom, $Prenom, $IdArticle, $Status, $Prix, $Devise, $Pays, $Cerise, $NumeroFacture, $TauxTVA, $Adresse);
+    var_dump(addVente($IdTransaction, $IdPaypalPayer, $IdUser, $Nom, $Prenom, $IdArticle, $Status, $Prix, $Devise, $Pays, $Cerise, $NumeroFacture, $TauxTVA, $Adresse));
 
     //mail pour le client
     mailAchat($email,$Prix,$NumeroFacture);
