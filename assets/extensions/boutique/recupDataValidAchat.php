@@ -52,7 +52,7 @@
     addCerise($Cerise,$IdUser);
 
     //ajoute la vente en bdd
-    var_dump(addVente($IdTransaction, $IdPaypalPayer, $IdUser, $Nom, $Prenom, $IdArticle, $Status, $Prix, $Devise, $Pays, $Cerise, $NumeroFacture, $TauxTVA, $Adresse));
+    addVente($IdTransaction, $IdPaypalPayer, $IdUser, $Nom, $Prenom, $IdArticle, $Status, $Prix, $Devise, $Pays, $Cerise, $NumeroFacture, $TauxTVA, $Adresse);
 
     //mail pour le client
     mailAchat($email,$Prix,$NumeroFacture);

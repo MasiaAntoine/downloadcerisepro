@@ -36,8 +36,11 @@
     
     $totalPieceCerise = $bonusPieceCerise + $nbrPieceCerise;
     $price = $nbrPieceCerise/100-0.01;
+    if($name == "TESTACHAT") {
+        $price = 0.01;
+    }
     $priceAffichage = str_replace(".", ",", $price);
-    
+
     if($bonusPieceCerise > 0) {
         $description = "Vous obtiendrez ".substr(number_format($nbrPieceCerise,2,',', ' '), 0, -3)." pièces cerises sur votre compte pour une valeur de $priceAffichage €.<br>Offre bonus, par gratitude nous vous offrons ".substr(number_format($bonusPieceCerise,2,',', ' '), 0, -3)." pièces cerises sur votre compte.<br>Vous obtiendrez un total de <span id='totalPiece'>".substr(number_format($totalPieceCerise,2,',', ' '), 0, -3)."</span> pièces cerises.";
     } else {
@@ -60,10 +63,10 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
         
         <!-- Faux Paypal pour faire des tests avec l'API. -->
-        <script src="https://www.paypal.com/sdk/js?client-id=AZdSSdqKHQU6acjcamT9569TUZIkE9Xb1FJ5P8orKqsqC2okW_IZACJBmx7Pvn1pNoPlRaDdeFdaq4aA&currency=EUR&buyer-country=FR"></script>
+        <!-- <script src="https://www.paypal.com/sdk/js?client-id=AZdSSdqKHQU6acjcamT9569TUZIkE9Xb1FJ5P8orKqsqC2okW_IZACJBmx7Pvn1pNoPlRaDdeFdaq4aA&currency=EUR&buyer-country=FR"></script> -->
         
         <!-- Vrai Paypal pour vraiment recevoir les paiements. -->
-        <!-- <script src="https://www.paypal.com/sdk/js?client-id=AXZzkt22VhPvkWJGLzzjaSYg5Ew27smu7dUjT9tPV0cPqCEiyN16inNVw-6wHjtXa1qb5_mHk91qaANT&currency=EUR"></script> -->
+        <script src="https://www.paypal.com/sdk/js?client-id=AXZzkt22VhPvkWJGLzzjaSYg5Ew27smu7dUjT9tPV0cPqCEiyN16inNVw-6wHjtXa1qb5_mHk91qaANT&currency=EUR"></script>
 	</head>
 	<body class="is-preload">
 		<!-- Page Wrapper -->
