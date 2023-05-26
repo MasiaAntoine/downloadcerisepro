@@ -966,7 +966,48 @@
 
         return $recette;
     }
-  
+
+    //   
+    /**
+     * Récupère le nombre d'inscript d'un mois choisi 
+     *
+     * @param  int $mois (Ex: 12)
+     * @param  int $annee (Ex: 2022)
+     * @return int 2
+     */
+    function recupInscriptionMois($mois,$annee) {
+        $bdd = connexion_db();
+        $stmt = $bdd->prepare("SELECT count(*) as inscription FROM users WHERE MONTH(DateInscription) = :mois AND YEAR(DateInscription) = :annee");
+        $stmt->execute([
+            "mois" => $mois,
+            "annee" => $annee
+        ]);
+
+        $recette = $stmt->fetch()['inscription'];
+        if(is_null($recette)) {
+            $recette = 0;
+        } else {
+            $recette = round($recette, 2);
+        }
+
+        return $recette;
+    }
+
+    
+
+    /**
+     * Récupérer toute les factures (pour les admins)
+     *
+     * @return array
+     */
+    function recupAllFicheAchete() {
+        $bdd = connexion_db();
+        $stmt = $bdd->prepare("SELECT count(*) as total FROM ficheunlocked");
+        $stmt->execute();
+        return $stmt->fetch()['total'];
+    }
+
+
     /**
      * Récupérer toute les factures (pour les admins)
      *
